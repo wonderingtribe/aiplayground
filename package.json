@@ -16,7 +16,7 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@supabase/supabase-js": "^2.108.2",
-    "@tailwindcss/vite": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/three": "^0.183.1",
     "@vitejs/plugin-react": "^6.0.3",
     "clsx": "^2.1.1",
