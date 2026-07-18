@@ -34,7 +34,7 @@
     "stripe": "^22.3.0",
     "tailwind-merge": "^3.5.0",
     "three": "^0.183.2",
-    "vite": "^8.1.4"
+    "vite": "^8.1.5"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -44,6 +44,6 @@
     "tailwindcss": "^4.3.2",
     "tsx": "^4.22.4",
     "typescript": "~7.0.2",
-    "vite": "^8.1.0"
+    "vite": "^8.1.5"
   }
 }
