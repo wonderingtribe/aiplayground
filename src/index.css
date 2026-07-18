@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-[#E4E3E0] antialiased;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#0a0a0a];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#2a2a2a] hover:bg-[#444] transition-colors;
+  }
+
+  /* Markdown Body Styles */
+  .markdown-body {
+    @apply text-[#E4E3E0] leading-relaxed;
+  }
+
+  .markdown-body p {
+    @apply mb-4;
+  }
+
+  .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+    @apply font-serif italic mb-4 mt-6 text-[#E4E3E0];
+  }
+
+  .markdown-body ul, .markdown-body ol {
+    @apply mb-4 pl-6 list-disc;
+  }
+
+  .markdown-body code {
+    @apply font-mono text-[11px] bg-[#141414] px-1.5 py-0.5 border border-[#2a2a2a];
+  }
+
+  .markdown-body pre {
+    @apply bg-[#141414] border border-[#2a2a2a] p-4 overflow-x-auto mb-4;
+  }
+
+  .markdown-body pre code {
+    @apply bg-transparent border-none p-0;
+  }
+
+  .markdown-body blockquote {
+    @apply border-l-2 border-[#E4E3E0] pl-4 italic text-[#888] mb-4;
+  }
+
+  .markdown-body img {
+    @apply max-w-full h-auto border border-[#2a2a2a] mb-4;
+  }
+}
